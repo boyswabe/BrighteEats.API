@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch via nodemon",
+            "type": "node",
+            "request": "launch",
+            "runtimeExecutable": "nodemon",
+            "runtimeArgs": [
+                "--exec",
+                "ts-node",
+                "./src/index.ts"
+            ],
+            "restart": true,
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "env": {
+                "CONNECTIONSTRING": "${env:CONNECTIONSTRING}",
+                "PORT": "${env:PORT}"
+            }
+        }
+    ]
+}

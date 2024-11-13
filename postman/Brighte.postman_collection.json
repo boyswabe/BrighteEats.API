@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "bed2e76c-9caf-4fe4-a1b5-28cb69561631",
+		"name": "Brighte",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1673064"
+	},
+	"item": [
+		{
+			"name": "GET Leads",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/leads",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"leads"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Lead",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/lead?id=D16CE55B-7046-4503-AF0A-AF1731E4EA69",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"lead"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "D16CE55B-7046-4503-AF0A-AF1731E4EA69"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Lead",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\": \"Mike Chua 03\",\r\n    \"Email\": \"mchua03@gmail.com\",\r\n    \"Mobile\": \"(123) 456 7890\",\r\n    \"PostCode\": \"55236\",\r\n    \"ServiceType\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/lead",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"lead"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
